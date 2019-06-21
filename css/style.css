@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: 'Bitter', serif;
+    color: #404040;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    display: flex;
+    max-width: 80em;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo-container__item {
+    margin: 2em 1em;
+    max-width: 30em;
+}
+
+.logo-container__img {
+    width: 100%;
+}
+
+.logo-container__name {
+    font-weight: bold;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #404040;
+    color: #FFD800;
+    padding: 3em 0 1em;
+    width: 100%;
+}
+
+.footer__text {
+    line-height: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    .main {
+    }
+}
