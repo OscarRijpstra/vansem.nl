@@ -61,6 +61,12 @@ a:hover {
     text-align: center;
 }
 
+.footer__location-pin {
+    width: 1.2em;
+    display: inline-block;
+    vertical-align: sub;
+}
+
 @media only screen and (min-width: 1024px) {
     .logo-container__name {
         font-size: 1.3rem;
