@@ -353,6 +353,7 @@ img {
 }
 
 .product__description {
+    padding-bottom: 0.5em;
 }
 
 .product__title {
