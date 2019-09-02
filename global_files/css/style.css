@@ -28,7 +28,7 @@ img {
 }
 
 .navigation__bar {
-    height: 5em;
+    height: 7em;
     align-items: center;
     display: flex;
     border-bottom: 1px solid #404040;
@@ -127,6 +127,7 @@ img {
     margin: 1em 0;
     grid-gap: 0.3em;
     line-height: 1.6em;
+    text-align: center;
 }
 
 .section__title {
