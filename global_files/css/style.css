@@ -346,6 +346,9 @@ img {
     padding: 0.8em 0.5em;
     font-size: 1rem;
     text-decoration: none;
+}
+
+.form__button {    
     text-align: center;
 }
 
