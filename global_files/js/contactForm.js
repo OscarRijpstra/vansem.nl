@@ -17,6 +17,9 @@ const recaptchaResponse = () => new Promise((resolve, reject) => {
 })
 
 async function submitForm() {
+    const submitButton = form.querySelector('[type="submit]');
+    submitButton.disabled = true;
+
     const recaptcha_response = await recaptchaResponse();
 
     const fullname = form.querySelector('[name="fullname"]').value;
@@ -44,5 +47,6 @@ async function submitForm() {
 
     if (message.status == 'invalid') {
         errorMessage.innerText = `Foutmelding: ${message.error}`;
+        submitButton.disabled = false;
     }
 }
