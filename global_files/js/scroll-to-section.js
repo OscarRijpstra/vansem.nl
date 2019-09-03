@@ -2,6 +2,8 @@ smoothScrollPolyfill();
 
 const scrollTriggers = Array.from(document.getElementsByClassName('trigger-scroll-to-section'));
 
+if (window.location.hash) changeNavigationSelector(window.location.hash.substr(1));
+
 scrollTriggers.map(trigger => {
     trigger.addEventListener('click', () => {
         changeNavigationSelector(trigger.getAttribute('data-section'));
