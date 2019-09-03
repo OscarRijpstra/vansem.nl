@@ -28,10 +28,10 @@ img {
 }
 
 .navigation__bar {
-    height: 7em;
     align-items: center;
     display: flex;
     border-bottom: 1px solid #404040;
+    height: 5em;
 }
 
 .navigation__logo {
@@ -113,9 +113,9 @@ img {
 }
 
 .text__block {
-    word-break: break-word;
     text-align: justify;
     margin: 0.5em;
+    white-space: pre-wrap;
 }
 
 .intro__text {
@@ -514,6 +514,7 @@ img {
 @media only screen and (min-width: 930px) {
     .navigation__bar {
         overflow-x: hidden;
+        height: 7em;
     }
 
     .navigation__item-desktop {
