@@ -259,6 +259,7 @@ img {
 .footer {
     margin-top: auto;
     background-color: #404040;
+    padding: 2em 0 1em;
 }
 
 .footer__text-container {
