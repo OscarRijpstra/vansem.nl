@@ -345,6 +345,8 @@ img {
     font-family: 'Bitter', serif;
     padding: 0.8em 0.5em;
     font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
 }
 
 .form__button {
