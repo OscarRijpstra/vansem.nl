@@ -354,6 +354,13 @@ img {
     min-width: 10em;
 }
 
+.form__button-left {
+    margin-right: auto;
+}
+
+.form__button-center {
+    margin: auto;
+}
 
 .form__button-right {
     margin-left: auto;
