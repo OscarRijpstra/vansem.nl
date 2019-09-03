@@ -537,6 +537,11 @@ img {
     -ms-grid-columns: 1fr 1fr;
 }
 
+.error__message {
+    margin: 0.5rem;
+    color: #F44336;
+}
+
 @media only screen and (min-width: 930px) {
     .navigation__bar {
         overflow-x: hidden;
