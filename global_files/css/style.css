@@ -289,7 +289,10 @@ img {
     margin-right: 0.2em;
 }
 
-.contact__grid {
+.footer__location-pin {
+    width: 1.2em;
+    display: inline-block;
+    vertical-align: sub;
 }
 
 .contact__grid-title {
