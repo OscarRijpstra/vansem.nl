@@ -562,7 +562,10 @@ img {
     .navigation__items-desktop {
         display: block;
         margin: auto;
-        padding-right: 175px;
+    }
+
+    .navigation__logo {
+        position: absolute;
     }
 
     .hamburger {
