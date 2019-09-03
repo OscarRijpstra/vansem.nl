@@ -320,6 +320,16 @@ img {
     display: flex;
     flex-direction: column;
     margin: 0.5em;
+    position: relative;
+}
+
+.form__field-required::after {
+    content: "*";
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    color: #F44336;
+    font-family: monospace;
 }
 
 .form__label-center {

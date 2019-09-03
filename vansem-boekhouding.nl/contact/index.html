@@ -60,25 +60,28 @@
             </div>
             <div class="contact__grid-item">
 <h2 class="contact__grid-title">Contactformulier</h2>
-<div class="form__field">
-    <label class="form__label">Naam</label>
-    <input class="form__textbox" type="text" placeholder="Naam" required>
-</div>
-<div class="form__field">
-    <label class="form__label">Telefoon</label>
-    <input class="form__textbox" type="tel" placeholder="06 12345678" required>
-</div>
-<div class="form__field">
-    <label class="form__label">Email</label>
-    <input class="form__textbox" type="email" placeholder="voorbeeld@email.com">
-</div>
-<div class="form__field">
-    <label class="form__label">Vraag / Opmerking</label>
-    <textarea class="form__textbox" rows="5" placeholder="Vraag / Opmerking" required></textarea>
-</div>
-<div class="form__field">
-    <input class="form__button form__button-right" type="button" value="Versturen">
-</div>            </div>
+<form method="POST" action="http://localhost:3000/vansem.nl/contact?page=vansem-boekhouding.nl" class="form" recaptchakey="6LcIYbYUAAAAAOodxhJb5X45rsCqDUAD5iI5qKQr">
+    <input class="recaptcha__input" type="hidden" name="recaptcha_response"/>
+    <div class="form__field form__field-required">
+        <label class="form__label">Naam</label>
+        <input class="form__textbox" type="text" name="fullname" placeholder="Naam" required minlength="3" maxlength="30" autocomplete="name">
+    </div>
+    <div class="form__field form__field-required">
+        <label class="form__label">Telefoon</label>
+        <input class="form__textbox" type="tel" name="phone" placeholder="06 12345678" required minlength="8" maxlength="12" autocomplete="tel-national">
+    </div>
+    <div class="form__field">
+        <label class="form__label">Email</label>
+        <input class="form__textbox" type="email" name="email" placeholder="voorbeeld@email.com" autocomplete="email">
+    </div>
+    <div class="form__field form__field-required">
+        <label class="form__label">Vraag / Opmerking</label>
+        <textarea class="form__textbox" rows="5" name="question" placeholder="Vraag / Opmerking" required minlength="5" maxlength="500"></textarea>
+    </div>
+    <div class="form__field">
+        <input class="form__button form__button-right" type="submit" value="Versturen">
+    </div>
+</form>            </div>
         </div>
     </div>
 </main>
@@ -109,7 +112,8 @@
             <span class="footer__copyright">Website door <a class="footer__link" href="https://nolimitsoftware.nl">NoLimitSoftware</a></span>
         </div>
     </div>
-</footer><script defer src="/global_files/js/responsive-image.js"></script>
+</footer><script src="https://www.google.com/recaptcha/api.js?render=6LcIYbYUAAAAAOodxhJb5X45rsCqDUAD5iI5qKQr"></script>
+<script defer src="/global_files/js/contactForm.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script>WebFont.load({ custom: { families: ['Bitter:n4,n7', 'Material+Icons'], urls: ['https://fonts.googleapis.com/css?family=Bitter:400,700|Material+Icons&display=swap',], }, });</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146945154-1"></script>
