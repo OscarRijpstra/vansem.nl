@@ -17,7 +17,7 @@ const recaptchaResponse = () => new Promise((resolve, reject) => {
 })
 
 async function submitForm() {
-    const submitButton = form.querySelector('[type="submit]');
+    const submitButton = form.querySelector('[type="submit"]');
     submitButton.disabled = true;
 
     const recaptcha_response = await recaptchaResponse();
