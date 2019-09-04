@@ -3,6 +3,9 @@ body {
     font-family: 'Bitter', serif;
     color: #404040;
     font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 img {
@@ -28,7 +31,9 @@ a:hover {
 
 .logo-container__item {
     margin: 1em;
+    flex: 1;
     max-width: 30em;
+    min-width: 15em;
 }
 
 .logo-container__img {
@@ -48,12 +53,11 @@ a:hover {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
     background-color: #404040;
     color: #FFD800;
     padding: 3em 0 1em;
     width: 100%;
+    margin-top: auto;
 }
 
 .footer__text {
