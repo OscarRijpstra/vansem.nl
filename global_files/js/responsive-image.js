@@ -72,6 +72,7 @@ responsiveImages.map(function (container) {
                     [1100, 1100]
                 ],
                 desktop: [
+                    [200, 200],
                     [300, 300],
                     [400, 400]
                 ]
