@@ -1,5 +1,4 @@
 const responsiveImages = Array.from(document.getElementsByClassName('responsive__img'));
-const imgExtentions = ['webp', 'wdp', 'jp2', 'jpg'];
 const imageHost = 'https://res.cloudinary.com/dyubvu51u/image/upload/';
 const cloudName = 'v1566569858';
 const folder = 'Vansem';
@@ -12,7 +11,7 @@ responsiveImages.map(function (container) {
 
     switch (type) {
         case 'header':
-            renderImage(container, publicID, alt, imgClass, 50, {
+            renderImage(container, publicID, alt, imgClass, 50, ['webp', 'wdp', 'jp2', 'jpg'], {
                 mobile: [
                     [500, 500],
                     [600, 500],
@@ -40,7 +39,7 @@ responsiveImages.map(function (container) {
             break;
 
         case 'product-thumbnail':
-            renderImage(container, publicID, alt, imgClass, 50, {
+            renderImage(container, publicID, alt, imgClass, 50, ['webp', 'wdp', 'jp2', 'jpg'], {
                 mobile: [
                     [200, 200],
                     [300, 300],
@@ -60,7 +59,7 @@ responsiveImages.map(function (container) {
             break;
 
         case 'imageContainer-item':
-            renderImage(container, publicID, alt, imgClass, 30, {
+            renderImage(container, publicID, alt, imgClass, 30, ['webp', 'wdp', 'jp2', 'jpg'], {
                 mobile: [
                     [400, 400],
                     [500, 500],
@@ -78,10 +77,21 @@ responsiveImages.map(function (container) {
                 ]
             });
             break;
+
+        case 'icon':
+            renderImage(container, publicID, alt, imgClass, 30, ['webp', 'png'], {
+                mobile: [
+                    [20, 20]
+                ],
+                desktop: [
+                    [20, 20]
+                ]
+            })
+            break;
     }
 })
 
-function renderImage(container, publicID, alt, imgClass, quality, resolutions) {
+function renderImage(container, publicID, alt, imgClass, quality, imgExtentions, resolutions) {
     const picture = document.createElement('picture');
     container.appendChild(picture);
 
