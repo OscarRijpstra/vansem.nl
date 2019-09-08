@@ -12,7 +12,7 @@ responsiveImages.map(function (container) {
 
     switch (type) {
         case 'header':
-            renderImage(container, publicID, alt, imgClass, {
+            renderImage(container, publicID, alt, imgClass, 50, {
                 mobile: [
                     [500, 500],
                     [600, 500],
@@ -40,7 +40,7 @@ responsiveImages.map(function (container) {
             break;
 
         case 'product-thumbnail':
-            renderImage(container, publicID, alt, imgClass, {
+            renderImage(container, publicID, alt, imgClass, 50, {
                 mobile: [
                     [200, 200],
                     [300, 300],
@@ -60,7 +60,7 @@ responsiveImages.map(function (container) {
             break;
 
         case 'imageContainer-item':
-            renderImage(container, publicID, alt, imgClass, {
+            renderImage(container, publicID, alt, imgClass, 30, {
                 mobile: [
                     [400, 400],
                     [500, 500],
@@ -81,7 +81,7 @@ responsiveImages.map(function (container) {
     }
 })
 
-function renderImage(container, publicID, alt, imgClass, resolutions) {
+function renderImage(container, publicID, alt, imgClass, quality, resolutions) {
     const picture = document.createElement('picture');
     container.appendChild(picture);
 
@@ -93,7 +93,7 @@ function renderImage(container, publicID, alt, imgClass, resolutions) {
             source.type = 'image/' + extention;
 
             const sourceValue = resolutions.mobile.map(function (resolution) {
-                return imageHost + 'q_50,c_fill,w_' + resolution[0] + (resolution[1] != 'auto' ? ',h_' + resolution[1] : '') + '/' + cloudName + '/' + folder + '/' + publicID + '.' + extention + ' ' + resolution[0] + 'w';
+                return imageHost + 'q_' + quality + ',c_fill,w_' + resolution[0] + (resolution[1] != 'auto' ? ',h_' + resolution[1] : '') + '/' + cloudName + '/' + folder + '/' + publicID + '.' + extention + ' ' + resolution[0] + 'w';
             });
             source.srcset = sourceValue.join(', ');
         }
@@ -105,7 +105,7 @@ function renderImage(container, publicID, alt, imgClass, resolutions) {
             source.type = 'image/' + extention;
 
             const sourceValue = resolutions.desktop.map(function (resolution) {
-                return imageHost + 'q_50,c_fill,w_' + resolution[0] + (resolution[1] != 'auto' ? ',h_' + resolution[1] : '') + '/' + cloudName + '/' + folder + '/' + publicID + '.' + extention + ' ' + resolution[0] + 'w';
+                return imageHost + 'q_' + quality +',c_fill,w_' + resolution[0] + (resolution[1] != 'auto' ? ',h_' + resolution[1] : '') + '/' + cloudName + '/' + folder + '/' + publicID + '.' + extention + ' ' + resolution[0] + 'w';
             });
             source.srcset = sourceValue.join(', ');
         }
