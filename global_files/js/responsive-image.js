@@ -79,12 +79,12 @@ responsiveImages.map(function (container) {
             break;
 
         case 'icon':
-            renderImage(container, publicID, alt, imgClass, 100, ['webp', 'png'], {
+            renderImage(container, publicID, alt, imgClass, 10, ['webp', 'png'], {
                 mobile: [
-                    [20, 20]
+                    [100, 100]
                 ],
                 desktop: [
-                    [20, 20]
+                    [100, 100]
                 ]
             })
             break;
