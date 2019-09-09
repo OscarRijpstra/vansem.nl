@@ -616,6 +616,11 @@ img {
         -ms-grid-columns: 1fr 1fr 1fr;  
     }
 
+    .grid__container-2-1 {
+        grid-template-columns: 2fr 1fr;
+        -ms-grid-columns: 2fr 1fr;  
+    }
+
     .spacing-l {
         margin: 3rem auto;
     }
