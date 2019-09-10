@@ -114,9 +114,7 @@ img {
 
 .text__block {
     text-align: justify;
-    text-justify: inter-word;
     margin: 0.5em;
-    white-space: pre-wrap;
 }
 
 .intro__text {
