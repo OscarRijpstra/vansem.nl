@@ -569,6 +569,18 @@ img {
     white-space: pre-wrap;
 }
 
+.diensten__item-text {
+    margin: 0.5em;
+    display: block;
+    white-space: pre-wrap;
+    padding-left: 0.5em;
+}
+
+.diensten__items-point::after {
+    position: absolute;
+    contain: "-";
+}
+
 @media only screen and (min-width: 930px) {
     .navigation__bar {
         overflow-x: hidden;
