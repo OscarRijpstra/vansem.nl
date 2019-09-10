@@ -174,13 +174,8 @@ img {
 .grid__item-text {
     margin: 0.5em;
     display: block;
-    white-space: pre-wrap;
     position: relative;
-    text-align: center;
     line-height: 1.5rem;
-    /* margin: 1em;
-    white-space: pre-wrap;
-    display: block; */
 }
 
 .grid__item-two {
@@ -584,6 +579,14 @@ img {
 
 .diensten__item {
     padding-bottom: 0.5em;
+}
+
+.diensten__item-text {
+    text-align: center;
+}
+
+.oplossingen__item-text {
+    text-align: justify;
 }
 
 @media only screen and (min-width: 930px) {
