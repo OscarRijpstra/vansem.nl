@@ -576,6 +576,7 @@ img {
     padding-left: 0.5em;
     position: relative;
     text-align: center;
+    line-height: 1.5rem;
 }
 
 .diensten__items-point::after {
