@@ -165,9 +165,11 @@ img {
 }
 
 .grid__item-title {
-    font-weight: 300;
+    font-weight: 700;
     color: #404040;
     text-align: center;
+    margin: 1rem;
+    font-size: 1.1rem;
 }
 
 .grid__item-text {
@@ -582,6 +584,10 @@ img {
     position: absolute;
     content: "-";
     left: 0;
+}
+
+.diensten__item {
+    padding-bottom: 0.5em;
 }
 
 @media only screen and (min-width: 930px) {
