@@ -607,7 +607,7 @@ img {
 }
 
 .grid__item-img-container {
-    height: 8em;
+    min-height: 7em;
     display: grid;
     margin: 0.5em 0;
 }
