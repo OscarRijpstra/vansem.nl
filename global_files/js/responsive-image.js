@@ -90,7 +90,7 @@ responsiveImages.map(function (container) {
             break;
 
         case 'grid-item-img':
-            renderImage(container, publicID, alt, imgClass, 10, ['webp', 'png'], {
+            renderImage(container, publicID, alt, imgClass, 50, ['webp', 'png'], {
                 mobile: [
                     [400, 'auto'],
                     [500, 'auto'],
