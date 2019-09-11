@@ -593,10 +593,12 @@ img {
     padding-left: 1em;
     margin: 0em;
     list-style-type: none;
+    position: relative;
 }
 
-.grid__item-li {
-
+.grid__item-li::after {
+    content: "-";
+    position: absolute;
 }
 
 @media only screen and (min-width: 930px) {
