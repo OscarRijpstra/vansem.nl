@@ -88,6 +88,26 @@ responsiveImages.map(function (container) {
                 ]
             })
             break;
+
+        case 'grid-item-img':
+            renderImage(container, publicID, alt, imgClass, 10, ['webp', 'png'], {
+                mobile: [
+                    [400, 'auto'],
+                    [500, 'auto'],
+                    [600, 'auto'],
+                    [700, 'auto'],
+                    [800, 'auto'],
+                    [900, 'auto'],
+                    [1000, 'auto'],
+                    [1100, 'auto']
+                ],
+                desktop: [
+                    [200, 'auto'],
+                    [300, 'auto'],
+                    [400, 'auto']
+                ]
+            })
+            break;
     }
 })
 
