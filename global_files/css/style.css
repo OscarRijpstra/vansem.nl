@@ -593,10 +593,13 @@ img {
     padding-left: 1em;
     margin: 0em;
     list-style-type: none;
+}
+
+.grid__item-li {
     position: relative;
 }
 
-.grid__item-li::after {
+.grid__item-li::before {
     content: "-";
     position: absolute;
 }
