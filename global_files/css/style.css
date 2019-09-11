@@ -590,17 +590,19 @@ img {
 }
 
 .grid__item-ul {
-    padding-left: 1em;
-    margin: 0em;
+    padding-left: 0;
+    margin: 0;
     list-style-type: none;
 }
 
 .grid__item-li {
+    padding-left: 1em;
     position: relative;
 }
 
 .grid__item-li::before {
     content: "-";
+    left: 0;
     position: absolute;
 }
 
