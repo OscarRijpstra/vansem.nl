@@ -589,6 +589,16 @@ img {
     text-align: justify;
 }
 
+.grid__item-ul {
+    padding-left: 1em;
+    margin: 0em;
+    list-style-type: none;
+}
+
+.grid__item-li {
+
+}
+
 @media only screen and (min-width: 930px) {
     .navigation__bar {
         overflow-x: hidden;
