@@ -115,9 +115,6 @@ img {
 .text__block {
     text-align: justify;
     margin: 0.5em;
-}
-
-.intro__text {
     color: #404040;
 }
 
@@ -617,6 +614,10 @@ img {
     margin: auto 1em;
 }
 
+.scroll__to-offset {
+    transform: translateY(-10em);
+}
+
 @media only screen and (min-width: 930px) {
     .navigation__bar {
         overflow-x: hidden;
@@ -714,12 +715,6 @@ img {
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-gap: 3em;
         margin: 0 1em;
-    }
-}
-
-@media only screen and (max-width: 929px) {
-    .mobile__scroll-to-offset {
-        transform: translateY(-10em);
     }
 }
 
