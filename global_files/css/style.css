@@ -702,6 +702,7 @@ img {
     .product__information-container {
         min-width: 20em;
         margin-left: auto;
+        max-width: 25em;
     }
     .contact__grid-item {
         flex: 1;
