@@ -17,6 +17,8 @@ img {
 }
 
 .header {
+    position: fixed;
+    width: 100%;
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
