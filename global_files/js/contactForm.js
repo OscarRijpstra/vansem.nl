@@ -3,18 +3,18 @@ const recaptchaKey = form.getAttribute('recaptchakey');
 const baseUrl = form.getAttribute('data-baseUrl');
 const errorMessage = document.getElementsByClassName('error__message')[0];
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', function(e) {
     e.preventDefault();
-
     submitForm();  
 })
 
-const recaptchaResponse = () => new Promise((resolve, reject) => {
+function recaptchaResponse() { new Promise(function(resolve, reject) {
     grecaptcha.ready(function() {
         grecaptcha.execute(recaptchaKey, {action: 'contact'})
         .then(function(token){ resolve(token) })
+        .catch(function(error){ reject(error) })
     });
-})
+})}
 
 async function submitForm() {
     const submitButton = form.querySelector('[type="submit"]');
