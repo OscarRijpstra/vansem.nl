@@ -690,6 +690,10 @@ img {
     font-size: 1.1rem;
 }
 
+.header-respimg {
+    width: 100%;
+}
+
 @media only screen and (min-width: 930px) {
     .navigation__bar {
         overflow-x: hidden;
