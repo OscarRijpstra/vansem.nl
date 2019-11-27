@@ -4,7 +4,7 @@ const scrollTriggers = Array.from(document.getElementsByClassName('trigger-scrol
 
 if (window.location.hash) changeNavigationSelector(window.location.hash.substr(1));
 
-scrollTriggers.map(trigger => {
+scrollTriggers.map(function(trigger) {
     trigger.addEventListener('click', () => {
         changeNavigationSelector(trigger.getAttribute('data-section'));
         scrollToSection(trigger.getAttribute('data-section'));
@@ -22,7 +22,7 @@ function scrollToSection(section, offset) {
 }
 
 function changeNavigationSelector(section) {
-    Array.from(document.getElementsByClassName('navigation__item-desktop')).map(navItem => {
+    Array.from(document.getElementsByClassName('navigation__item-desktop')).map(function(navItem) {
         if (navItem.getAttribute('data-section') == section) navItem.classList.add('navigation__item-current')
         else navItem.classList.remove('navigation__item-current')
     })
