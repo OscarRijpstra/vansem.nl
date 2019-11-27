@@ -802,6 +802,10 @@ img {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    main {
+        margin-top: 7rem;
+    }
+
     .navigation__logo-primary {
         top: 1rem;
     }

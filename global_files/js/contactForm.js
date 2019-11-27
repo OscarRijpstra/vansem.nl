@@ -12,7 +12,6 @@ const recaptchaResponse = new Promise(function(resolve, reject) {
     grecaptcha.ready(function() {
         grecaptcha.execute(recaptchaKey, {action: 'contact'})
         .then(function(token){ resolve(token) })
-        .catch(function(error){ reject(error) })
     });
 });
 
