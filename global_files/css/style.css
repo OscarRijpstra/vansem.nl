@@ -796,3 +796,9 @@ img {
         -webkit-text-size-adjust: none;
     }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .navigation__logo-primary {
+        top: 1rem;
+    }
+}

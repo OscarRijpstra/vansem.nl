@@ -5,7 +5,7 @@ const scrollTriggers = Array.from(document.getElementsByClassName('trigger-scrol
 if (window.location.hash) changeNavigationSelector(window.location.hash.substr(1));
 
 scrollTriggers.map(function(trigger) {
-    trigger.addEventListener('click', () => {
+    trigger.addEventListener('click', function() {
         changeNavigationSelector(trigger.getAttribute('data-section'));
         scrollToSection(trigger.getAttribute('data-section'));
     })
