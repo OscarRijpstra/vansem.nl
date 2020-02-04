@@ -8,18 +8,19 @@ form.addEventListener('submit', function(e) {
     submitForm();  
 })
 
-const recaptchaResponse = new Promise(function(resolve, reject) {
-    grecaptcha.ready(function() {
-        grecaptcha.execute(recaptchaKey, {action: 'contact'})
-        .then(function(token){ resolve(token) })
+function getRecptchaResponse() {
+    return new Promise(function(resolve, reject) {
+        grecaptcha.ready(function() {
+            grecaptcha.execute(recaptchaKey, {action: 'contact'})
+            .then(function(token){ resolve(token) })
+        });
     });
-});
+} 
 
 async function submitForm() {
+    const recaptcha_response = await getRecptchaResponse();
     const submitButton = form.querySelector('[type="submit"]');
     submitButton.disabled = true;
-
-    const recaptcha_response = await recaptchaResponse();
 
     const fullname = form.querySelector('[name="fullname"]').value;
     const phone = form.querySelector('[name="phone"]').value;
